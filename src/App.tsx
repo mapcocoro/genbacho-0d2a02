@@ -3,6 +3,7 @@ import Home from './pages/Home';
 import EstimateForm from './pages/EstimateForm';
 import Preview from './pages/Preview';
 import Settings from './pages/Settings';
+import ProductManagement from './pages/ProductManagement';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/estimate/:id" element={<EstimateForm />} />
         <Route path="/preview/:id" element={<Preview />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/products" element={<ProductManagement />} />
       </Routes>
     </BrowserRouter>
   );

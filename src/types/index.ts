@@ -6,6 +6,12 @@ export interface EstimateItem {
   unit: string;
   unitPrice: number;
   amount: number;
+  // 値引き情報
+  discount?: {
+    type: 'percent' | 'amount';  // %引き or 円引き
+    value: number;               // 割引率 or 割引額
+  };
+  originalAmount?: number;       // 値引き前の金額
 }
 
 // 顧客情報
@@ -20,7 +26,6 @@ export interface Estimate {
   id: string;
   estimateNumber: string;
   customer: CustomerInfo;
-  workType: string;
   items: EstimateItem[];
   subtotal: number;
   tax: number;
