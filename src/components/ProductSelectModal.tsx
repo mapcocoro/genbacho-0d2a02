@@ -22,7 +22,7 @@ interface Props {
 type Step = 'main' | 'sub' | 'product';
 
 const getCategoryIcon = (iconName: string, className: string = "w-10 h-10") => {
-  const icons: Record<string, JSX.Element> = {
+  const icons: Record<string, React.ReactNode> = {
     paint: <PaintIcon className={className} />,
     electric: <ElectricIcon className={className} />,
     interior: <InteriorIcon className={className} />,

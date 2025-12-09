@@ -4,7 +4,7 @@ import html2canvas from 'html2canvas';
 import Header from '../components/Header';
 import type { Estimate, CompanyInfo } from '../types';
 import { getEstimateById, getCompanyInfo } from '../utils/storage';
-import { formatDate, formatCurrency } from '../utils/format';
+import { formatDate } from '../utils/format';
 
 export default function Preview() {
   const { id } = useParams();
