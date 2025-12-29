@@ -81,7 +81,7 @@ export default function Preview() {
       link.click();
     } catch (error) {
       console.error('画像保存エラー:', error);
-      alert('画像の保存に失敗しました');
+      alert('デモサイトのため、画像の保存機能はご利用いただけません。');
     } finally {
       setSaving(false);
     }

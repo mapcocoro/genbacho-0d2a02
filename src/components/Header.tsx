@@ -18,7 +18,7 @@ export default function Header() {
                 <path d="M7 9h10v2H7zm0 4h7v2H7z"/>
               </svg>
             </div>
-            <span className="text-base font-bold">見積もりPro</span>
+            <span className="text-sm font-bold">その場で見積もり-現場帳</span>
           </Link>
           <nav className="flex gap-1">
             <Link
