@@ -46,7 +46,7 @@ export default function PresetModal({ isOpen, onClose, onSelect }: Props) {
         </div>
 
         {/* 項目リスト */}
-        <div className="flex-1 overflow-y-auto overscroll-contain p-2 pb-[env(safe-area-inset-bottom)]">
+        <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain p-2 pb-[env(safe-area-inset-bottom)]">
           {currentCategory?.items.map((item, index) => (
             <button
               key={index}

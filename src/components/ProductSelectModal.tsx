@@ -136,7 +136,7 @@ export default function ProductSelectModal({ isOpen, onClose, onSelect }: Props)
         </div>
 
         {/* コンテンツ */}
-        <div className="flex-1 overflow-y-auto overscroll-contain pb-[env(safe-area-inset-bottom)]">
+        <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain pb-[env(safe-area-inset-bottom)]">
           {/* 大項目選択 */}
           {step === 'main' && (
             <div className="grid grid-cols-2 gap-3 p-4">
