@@ -17,7 +17,7 @@ export default function PresetModal({ isOpen, onClose, onSelect }: Props) {
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-end justify-center z-50">
-      <div className="bg-white rounded-t-2xl w-full max-w-lg max-h-[80vh] flex flex-col animate-slide-up">
+      <div className="bg-white rounded-t-2xl w-full max-w-lg max-h-[80dvh] flex flex-col animate-slide-up">
         <div className="flex items-center justify-between p-4 border-b">
           <h3 className="text-lg font-bold">項目を選択</h3>
           <button
@@ -46,7 +46,7 @@ export default function PresetModal({ isOpen, onClose, onSelect }: Props) {
         </div>
 
         {/* 項目リスト */}
-        <div className="flex-1 overflow-y-auto p-2">
+        <div className="flex-1 overflow-y-auto overscroll-contain p-2 pb-[env(safe-area-inset-bottom)]">
           {currentCategory?.items.map((item, index) => (
             <button
               key={index}

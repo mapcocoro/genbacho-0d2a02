@@ -77,7 +77,7 @@ export default function ProductSelectModal({ isOpen, onClose, onSelect }: Props)
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-end justify-center z-50">
-      <div className="bg-white rounded-t-lg w-full max-w-lg max-h-[85vh] flex flex-col shadow-xl">
+      <div className="bg-white rounded-t-lg w-full max-w-lg max-h-[85dvh] flex flex-col shadow-xl">
         {/* ヘッダー */}
         <div className="relative px-4 py-3 border-b border-gray-200">
           {step !== 'main' && (
@@ -136,7 +136,7 @@ export default function ProductSelectModal({ isOpen, onClose, onSelect }: Props)
         </div>
 
         {/* コンテンツ */}
-        <div className="flex-1 overflow-y-auto">
+        <div className="flex-1 overflow-y-auto overscroll-contain pb-[env(safe-area-inset-bottom)]">
           {/* 大項目選択 */}
           {step === 'main' && (
             <div className="grid grid-cols-2 gap-3 p-4">

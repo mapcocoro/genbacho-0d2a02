@@ -233,7 +233,7 @@ export default function EstimateForm() {
                 type="text"
                 value={customerAddress}
                 onChange={(e) => setCustomerAddress(e.target.value)}
-                placeholder="例: 東京都渋谷区..."
+                placeholder="例: 千葉県印西市..."
                 className="w-full border border-gray-300 rounded px-3 py-2.5 text-base focus:border-gray-500 focus:ring-1 focus:ring-gray-500 outline-none"
               />
             </div>

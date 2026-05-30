@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import EstimateForm from './pages/EstimateForm';
 import Preview from './pages/Preview';
@@ -7,7 +7,7 @@ import ProductManagement from './pages/ProductManagement';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/estimate/new" element={<EstimateForm />} />
@@ -16,7 +16,7 @@ function App() {
         <Route path="/settings" element={<Settings />} />
         <Route path="/products" element={<ProductManagement />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
