@@ -19,8 +19,11 @@
 
 ## デプロイ
 
-- ホスティング: Vercel
-- コマンド: vercel --prod
+- ホスティング: GitHub Pages（publicリポジトリ）
+- URL: https://mapcocoro.github.io/kensetsu-estimate-app/
+- 方法: main へ push すると GitHub Actions（.github/workflows/deploy.yml）が自動ビルド＆公開
+- ルーターは HashRouter（Pagesのサブパス配信で404を回避するため）
+- vite.config.ts の base は './'（相対パス配信）
 
 ## 開発
 
