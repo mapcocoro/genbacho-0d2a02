@@ -19,8 +19,9 @@
 
 ## デプロイ
 
-- ホスティング: GitHub Pages（publicリポジトリ）
-- URL: https://mapcocoro.github.io/kensetsu-estimate-app/
+- ホスティング: GitHub Pages（publicリポジトリ ※無料枠はpublic必須）
+- リポジトリ名: mapcocoro/genbacho-0d2a02（顧客向けにURLを推測されにくくするためランダム接尾辞を付与）
+- URL: https://mapcocoro.github.io/genbacho-0d2a02/
 - 方法: main へ push すると GitHub Actions（.github/workflows/deploy.yml）が自動ビルド＆公開
 - ルーターは HashRouter（Pagesのサブパス配信で404を回避するため）
 - vite.config.ts の base は './'（相対パス配信）
